@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette generator HSL</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        
+          
+        <div class="formulaire">
+            <button onmousedown="main(1)">primary</button>
+            <button onmousedown="main(2)">complementary</button>
+            <button onmousedown="main(3)">split</button>
+            <button onmousedown="main(4)">analogous</button>
+            <button onmousedown="main(5)">triadic</button>
+            <button onmousedown="main(6)">square</button>
+            <button onmousedown="main(7)">tetraedric</button>
+            <input type="text" class="shades-number" placeholder="0123">
+            <button onmousedown="main(8)">darken</button>
+            <button onmousedown="main(9)">lighten</button>
+
+            
+
+            <form id="hsl-form">
+                <input id="hslider" type="range" name="--h" min="0" max="360" value="250" />
+                <input id="sslider" type="range" name="--s" min="0" max="100" value="100"  />
+                <input id="lslider" type="range" name="--l" min="0" max="100" value="70"  />
+            </form>
+        </div>
+
+
+        
+        <div class="colors-bg-wrapper">
+            <div class="color-bg"></div>
+        </div>
+
+        <script src="js/hexcolor.js"></script>
+    </div>
+</body>
+</html>

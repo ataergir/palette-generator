@@ -1,0 +1,97 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: -4px;
+    padding: 0;
+    overflow: visible;
+}
+
+.formulaire button,
+.formulaire .shades-number{
+    border: black 1px solid;
+    transition: ease-in-out 1s;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+.formulaire>*:focus{
+    flex: 0.5 0 auto;
+    background-color: #222;
+    color:white;
+}
+
+.shades-number{
+    width: 2rem;
+    margin-left: 40px;
+}
+
+.formulaire-input{
+    width: 4em;
+}
+
+.colors-bg-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -500;
+}
+
+.color-bg{
+    background-color: hsl(var(--h,0), var(--s,100%), var(--l, 90%));
+    transition: background-color 2s linear, flex ease 2s;
+    flex: 1 1 0;
+    font-family: "Roboto", sans-serif;
+}
+.color-bg:hover{
+    flex: 2;
+    font-size: 1.5em;
+}
+.color-bg p{
+    writing-mode: vertical-lr;
+    display: inline-block;  
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+.colorbtn{
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: -20px;
+    transform: rotate(90deg);
+
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.color-bg:hover button{
+    opacity: 1;
+}
+
+.copybtn{
+    margin-top: 150px;
+    margin-left: -6px;
+}
+
+.primarybtn{
+    margin-top: 90px;
+    margin-left: -15px;
+}
